@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Coin from "./Coin";
 
-function App() {
+const App = () => {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
 
@@ -66,6 +66,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
